@@ -1,0 +1,14 @@
+apiVersion: v1
+entries:
+  productcatalog:
+  - apiVersion: v2
+    appVersion: 1.16.0
+    created: "2023-10-06T17:28:01.268236+02:00"
+    description: A Helm chart for Kubernetes
+    digest: c36288c5ba739acfa4e95405d75ed39dc355381d5d8748d06c00f56490a6a4d6
+    name: productcatalog
+    type: application
+    urls:
+    - https://tmforum-rand.github.io/oda-helm-charts/productcatalog-0.1.0.tgz
+    version: 0.1.0
+generated: "2023-10-06T17:28:01.267627+02:00"
