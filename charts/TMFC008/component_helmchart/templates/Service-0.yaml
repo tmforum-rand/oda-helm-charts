@@ -1,0 +1,14 @@
+apiVersion: v1
+kind: Service
+metadata:
+  labels:
+    oda.tmforum.org/componentName: '{{.Release.Name}}-{{.Values.component.name}}'
+  name: '{{.Release.Name}}-{{.Release.Name}}-serviceInventory'
+spec:
+  ports:
+  - name: http-{{.Release.Name}}-service
+    port: 8080
+    targetPort: '{{.Release.Name}}-service'
+  selector:
+    matchLabels:
+      impl: '{{.Release.Name}}-{{.Release.Name}}-serviceInventory'
