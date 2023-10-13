@@ -1,4 +1,0 @@
-apiVersion: 3.2.4
-appVersion: v1beta1
-name: component_helmchart
-version: 0.1.0
