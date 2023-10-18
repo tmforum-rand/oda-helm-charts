@@ -1,0 +1,37 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  labels:
+    oda.tmforum.org/componentName: '{{.Release.Name}}-{{.Values.component.name}}'
+  name: '{{.Release.Name}}-Event'
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      impl: '{{.Release.Name}}-Event'
+  template:
+    metadata:
+      labels:
+        app: '{{.Release.Name}}-{{.Values.component.name}}'
+        impl: '{{.Release.Name}}-Event'
+        version: 4
+    spec:
+      containers:
+      - env:
+        - name: RELEASE_NAME
+          value: '{{.Release.Name}}'
+        - name: COMPONENT_NAME
+          value: '{{.Release.Name}}-{{.Values.component.name}}'
+        image: tmforumorg/event:latest
+        imagePullPolicy: Always
+        name: '{{.Release.Name}}-Event'
+        ports:
+        - containerPort: 8080
+          name: '{{.Release.Name}}-Event'
+        startupProbe:
+          failureThreshold: 30
+          httpGet:
+            path: Event
+            port: 8080
+          initialDelaySeconds: 10
+          periodSeconds: 5

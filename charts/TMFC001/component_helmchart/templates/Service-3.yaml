@@ -1,0 +1,14 @@
+apiVersion: v1
+kind: Service
+metadata:
+  labels:
+    oda.tmforum.org/componentName: '{{.Release.Name}}-{{.Values.component.name}}'
+  name: '{{.Release.Name}}-{{.Release.Name}}-Event'
+spec:
+  ports:
+  - name: http-{{.Release.Name}}-Event
+    port: 8080
+    targetPort: '{{.Release.Name}}-Event'
+  selector:
+    matchLabels:
+      impl: '{{.Release.Name}}-{{.Release.Name}}-Event'

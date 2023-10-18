@@ -1,0 +1,14 @@
+apiVersion: v1
+kind: Service
+metadata:
+  labels:
+    oda.tmforum.org/componentName: '{{.Release.Name}}-{{.Values.component.name}}'
+  name: '{{.Release.Name}}-{{.Release.Name}}-PromotionManagement'
+spec:
+  ports:
+  - name: http-{{.Release.Name}}-Promoti
+    port: 8080
+    targetPort: '{{.Release.Name}}-Promoti'
+  selector:
+    matchLabels:
+      impl: '{{.Release.Name}}-{{.Release.Name}}-PromotionManagement'
