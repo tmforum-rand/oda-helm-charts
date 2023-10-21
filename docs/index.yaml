@@ -3,7 +3,7 @@ entries:
   canvas-oda:
   - apiVersion: v2
     appVersion: 1.0.0
-    created: "2023-10-19T00:59:24.806722+02:00"
+    created: "2023-10-21T19:12:07.55242+01:00"
     dependencies:
     - name: cert-manager-init
       repository: file://../cert-manager-init
@@ -27,7 +27,7 @@ entries:
       repository: file://../oda-webhook
       version: 1.0.0
     description: A Helm of helm to orchestrate the ODA installation
-    digest: a9c7a829d53222dc707d242a12b6d9d0debefe6c32e44a51197a50e144fc7072
+    digest: a9567b7b68a13656c6e65fa9c708adef1d09a05bd70916708298365823c629b3
     name: canvas-oda
     type: application
     urls:
@@ -36,7 +36,7 @@ entries:
   productcatalog:
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2023-10-19T00:59:24.80708+02:00"
+    created: "2023-10-21T19:12:07.552668+01:00"
     description: A Helm chart for Kubernetes
     digest: c36288c5ba739acfa4e95405d75ed39dc355381d5d8748d06c00f56490a6a4d6
     name: productcatalog
@@ -44,4 +44,4 @@ entries:
     urls:
     - productcatalog-0.1.0.tgz
     version: 0.1.0
-generated: "2023-10-19T00:59:24.797408+02:00"
+generated: "2023-10-21T19:12:07.541448+01:00"
