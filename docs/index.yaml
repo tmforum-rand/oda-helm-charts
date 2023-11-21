@@ -3,9 +3,9 @@ entries:
   canvas-namespaces:
   - apiVersion: v2
     appVersion: 1.0.0
-    created: "2023-11-20T13:23:45.357936335Z"
+    created: "2023-11-21T13:03:33.419548768Z"
     description: A Helm chart for Kubernetes
-    digest: 4e503d076fab3707ad8363396acfec760c8c4bfcfa6d54cedb52dd56c3c87445
+    digest: 5484e266073bf0c5a4cd1a4b2aec2bd18fb4948237e6961d9c536730c191483b
     name: canvas-namespaces
     type: application
     urls:
@@ -14,7 +14,7 @@ entries:
   canvas-oda:
   - apiVersion: v2
     appVersion: 1.0.0
-    created: "2023-11-20T13:23:45.375158381Z"
+    created: "2023-11-21T13:03:33.438156851Z"
     dependencies:
     - condition: cert-manager.enabled
       name: cert-manager
@@ -42,7 +42,7 @@ entries:
       repository: file://../oda-webhook
       version: 1.0.0
     description: A Helm of helm to orchestrate the ODA installation
-    digest: fe8c43460482e2fe22d99625950e94780f823ac08dea732b92c9fbb5c767f410
+    digest: cee1768f3e3c623a0901d9b2de0a50cc3ae3dd7ce9a38969f256a25808188fe0
     name: canvas-oda
     type: application
     urls:
@@ -51,9 +51,9 @@ entries:
   canvas-operator-controller:
   - apiVersion: v2
     appVersion: 1.0.0
-    created: "2023-11-20T13:23:45.37560719Z"
+    created: "2023-11-21T13:03:33.438573175Z"
     description: The component controller
-    digest: 54356b4e38538938883b29f4d11ce29e8fc352f501037a14a5fd2c3333192b0e
+    digest: 855a2426d691a01789330dfa1c3d1abaecdbd256d17462e66206b426cee639fb
     name: canvas-operator-controller
     type: application
     urls:
@@ -62,9 +62,9 @@ entries:
   oda-canvas-controller-certificates:
   - apiVersion: v2
     appVersion: 1.0.0
-    created: "2023-11-20T13:23:45.375913896Z"
+    created: "2023-11-21T13:03:33.438878392Z"
     description: A Helm chart for installing
-    digest: f8e042abbab394eae571f74e0e0b01e96cfb5d2359b25aa215586b4cb6004ba9
+    digest: d56f4a71c89dd42dce4d4d97fac8bffadd0171d5a34b3e2984aac7877c2d2d44
     name: oda-canvas-controller-certificates
     type: application
     urls:
@@ -73,9 +73,9 @@ entries:
   oda-crds:
   - apiVersion: v2
     appVersion: 1.0.0
-    created: "2023-11-20T13:23:45.376317704Z"
+    created: "2023-11-21T13:03:33.439218712Z"
     description: Canvas CRDs
-    digest: 68c6638e4f2cdf76ea7a7ca46f9f78a2128c7b3bf7b45248d2a3438e4ecb7bf2
+    digest: eee819424a2de80c872ee3100161039e1b351df60bd46be423fc627c843572bf
     name: oda-crds
     type: application
     urls:
@@ -84,9 +84,9 @@ entries:
   oda-webhook:
   - apiVersion: v2
     appVersion: 1.0.0
-    created: "2023-11-20T13:23:45.37657851Z"
+    created: "2023-11-21T13:03:33.439452126Z"
     description: A Helm chart for deploying webhook following pattern in https://kubernetes.io/docs/tasks/extend-kubernetes/custom-resources/custom-resource-definition-versioning/#webhook-conversion
-    digest: 21fe167464d4b2e6b2bdb63bc3ce5adcda669c6cd1969ffb208ff68ebf860f0e
+    digest: ea212e650b174ef3cbe0f9d1eed17d020f66db1caa6a73b947e250591ae7caf5
     name: oda-webhook
     type: application
     urls:
@@ -95,7 +95,7 @@ entries:
   productcatalog:
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2023-11-20T13:23:45.377149921Z"
+    created: "2023-11-21T13:03:33.439764344Z"
     description: A Helm chart for Kubernetes
     digest: c36288c5ba739acfa4e95405d75ed39dc355381d5d8748d06c00f56490a6a4d6
     name: productcatalog
@@ -103,4 +103,4 @@ entries:
     urls:
     - productcatalog-0.1.0.tgz
     version: 0.1.0
-generated: "2023-11-20T13:23:45.357482926Z"
+generated: "2023-11-21T13:03:33.419122543Z"
